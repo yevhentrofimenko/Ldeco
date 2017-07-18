@@ -47,41 +47,46 @@ header{
   padding-bottom: 20px;
   &>nav {
     border-bottom: 1px solid @grey;
-    max-width: 1180px;
+    max-width: 1280px;
     margin: auto;
     padding-bottom: 15px;
-
-    &>a {
-      line-height: 18px;
-      font-size: 18px;
-      text-decoration: none;
-      color: #4d4d4d;
-      padding: 43px;
-      font-family: @light-font;
-      position: relative;
-      &:hover{
-        color: @red;
-        &::after{
-          content: '';
+    ul{
+        li{
+          list-style-type: none;
           display: inline-block;
-          width: 50px;
-          height: 1px;
-          background: @red;
-          position: absolute;
-          top: 61px;
-          left: 44px;
+          &>a {
+            line-height: 18px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #4d4d4d;
+            padding: 43px;
+            font-family: @light-font;
+            position: relative;
+            &:hover {
+              color: @red;
+              &::after {
+                content: '';
+                display: inline-block;
+                width: 50px;
+                height: 1px;
+                background: @red;
+                position: absolute;
+                top: 61px;
+                left: 44px;
+              }
+              &:before {
+                content: '';
+                display: inline-block;
+                width: 29px;
+                height: 1px;
+                background: @red;
+                position: absolute;
+                top: 63px;
+                left: 44px;
+              }
+            }
+          }
         }
-        &:before{
-          content: '';
-          display: inline-block;
-          width: 29px;
-          height: 1px;
-          background: @red;
-          position: absolute;
-          top: 63px;
-          left: 44px;
-        }
-      }
     }
 
   }
@@ -252,51 +257,57 @@ header{
 }
 footer{
 background: #f2f2f2;
-max-width: 1920px;
-margin: auto;
-text-align: center;
-padding-bottom: 20px;
-&>nav {
-  border-bottom: 1px solid @grey;
-  max-width: 1180px;
+  max-width: 1920px;
   margin: auto;
-  padding-bottom: 15px;
-  padding-top: 23px;
-
-  &>a {
-    line-height: 18px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #4d4d4d;
-    padding: 43px;
-    font-family: @light-font;
-    position: relative;
-    &:hover{
-      color: @red;
-      &::after{
-        content: '';
+  text-align: center;
+  margin-top: 22px;
+  padding-bottom: 20px;
+  &>nav {
+    padding-top: 20px;
+    border-bottom: 1px solid @grey;
+    max-width: 1280px;
+    margin: auto;
+    padding-bottom: 15px;
+    ul{
+      li{
+        list-style-type: none;
         display: inline-block;
-        width: 50px;
-        height: 1px;
-        background: @red;
-        position: absolute;
-        top: 61px;
-        left: 44px;
-      }
-      &:before{
-        content: '';
-        display: inline-block;
-        width: 29px;
-        height: 1px;
-        background: @red;
-        position: absolute;
-        top: 63px;
-        left: 44px;
+        &>a {
+          line-height: 18px;
+          font-size: 18px;
+          text-decoration: none;
+          color: #4d4d4d;
+          padding: 43px;
+          font-family: @light-font;
+          position: relative;
+          &:hover {
+            color: @red;
+            &::after {
+              content: '';
+              display: inline-block;
+              width: 50px;
+              height: 1px;
+              background: @red;
+              position: absolute;
+              top: 61px;
+              left: 44px;
+            }
+            &:before {
+              content: '';
+              display: inline-block;
+              width: 29px;
+              height: 1px;
+              background: @red;
+              position: absolute;
+              top: 63px;
+              left: 44px;
+            }
+          }
+        }
       }
     }
-  }
 
-}
+  }
 &>div{
   max-width: 1180px;
   margin: auto;

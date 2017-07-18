@@ -34,11 +34,15 @@ header {
 }
 header > nav {
   border-bottom: 1px solid #e5e5e5;
-  max-width: 1180px;
+  max-width: 1280px;
   margin: auto;
   padding-bottom: 15px;
 }
-header > nav > a {
+header > nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+header > nav ul li > a {
   line-height: 18px;
   font-size: 18px;
   text-decoration: none;
@@ -47,10 +51,10 @@ header > nav > a {
   font-family: 'PFDinDisplayPro-Light';
   position: relative;
 }
-header > nav > a:hover {
+header > nav ul li > a:hover {
   color: #da0000;
 }
-header > nav > a:hover::after {
+header > nav ul li > a:hover::after {
   content: '';
   display: inline-block;
   width: 50px;
@@ -60,7 +64,7 @@ header > nav > a:hover::after {
   top: 61px;
   left: 44px;
 }
-header > nav > a:hover:before {
+header > nav ul li > a:hover:before {
   content: '';
   display: inline-block;
   width: 29px;
@@ -238,16 +242,21 @@ footer {
   max-width: 1920px;
   margin: auto;
   text-align: center;
+  margin-top: 22px;
   padding-bottom: 20px;
 }
 footer > nav {
+  padding-top: 20px;
   border-bottom: 1px solid #e5e5e5;
-  max-width: 1180px;
+  max-width: 1280px;
   margin: auto;
   padding-bottom: 15px;
-  padding-top: 23px;
 }
-footer > nav > a {
+footer > nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+footer > nav ul li > a {
   line-height: 18px;
   font-size: 18px;
   text-decoration: none;
@@ -256,10 +265,10 @@ footer > nav > a {
   font-family: 'PFDinDisplayPro-Light';
   position: relative;
 }
-footer > nav > a:hover {
+footer > nav ul li > a:hover {
   color: #da0000;
 }
-footer > nav > a:hover::after {
+footer > nav ul li > a:hover::after {
   content: '';
   display: inline-block;
   width: 50px;
@@ -269,7 +278,7 @@ footer > nav > a:hover::after {
   top: 61px;
   left: 44px;
 }
-footer > nav > a:hover:before {
+footer > nav ul li > a:hover:before {
   content: '';
   display: inline-block;
   width: 29px;
